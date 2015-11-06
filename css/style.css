@@ -1147,6 +1147,31 @@ h2.blog-post-title span {
   margin: 30px 0;
 }
 
+.blog-post-body a {
+  position: relative;
+  color: #d40000;
+}
+
+.blog-post-body a:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #d40000;
+  width: 0;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+
+.blog-post-body a:hover:after {
+  width: 100%;
+}
+
 .blog-post-body h3 {
   position: relative;
   font-size: 1.5em;
