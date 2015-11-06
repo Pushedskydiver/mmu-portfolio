@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to Alex Clapperton's Website. As a student at Manchester Metropolitan University I am required to create a portfolio website as part of my project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>Blog | Alex Clapperton - Web Development, Manchester Metropolitan University</title>
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+
+    <!-- STYLSEHEETS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- SKIP TO CONTENT - Hidden off screen -->
+    <div class="skip-to-content">
+      <a href="#blog">Skip to content</a>
+    </div>
+
+    <!--******************** HOME SECTION : Start ********************-->
+    <section id="home" class="home scrollme parallax-window-blog" data-parallax="scroll" data-image-src="images/blog-intro.jpg">
+    <!--******************** NAVIGATION : Start ********************-->
+    <header role="banner">
+      <nav class="nav animated fadeInDown" role="navigation">
+        <div class="container clearfix">
+
+          <!-- START: Logo -->
+          <div class="logo">
+            <a href="#home" title="Alex Clapperton">
+              <div class="nav-logo logo-black"></div>
+              <p>Alex Clapperton</p></a>
+          </div>
+          <!-- END: Logo -->
+
+          <!-- START: Mobile Nav -->
+          <div class="trigger-nav">
+						<div class="inner">
+							<span class="icon-bar top"></span>
+							<span class="icon-bar middle"></span>
+							<span class="icon-bar bottom"></span>
+						</div>
+					</div>
+          <!-- EBD: Mobile Nav -->
+
+          <!-- START: Main Nav -->
+          <div class="main-nav">
+            <ul>
+              <li onclick="document.location.href='index.html';"><a href="index.html" class="roll-link"><span data-title="Home">Home</span></a></li>
+              <li onclick="document.location.href='acw.html';"><a href="acw.html" class="roll-link"><span data-title="Assignment">Assignment</span></a></li>
+              <li class="active"><a href="blog.html" class="roll-link">Blog</a></li>
+            </ul>
+          </div>
+          <!-- END: Main Nav -->
+        </div>
+      </nav>
+    </header>
+    <!--******************** NAVIGATION : End ********************-->
+
+
+    <!--******************** MAIN CONTENT : Start ********************-->
+    <div class="animateme" data-when="exit" data-from="0" data-to="0.7" data-easing="easeinout" data-opacity="0" data-translatey="-200">
+      <main class="main-home" role="main">
+        <div class="home-content">
+          <!-- START: Container -->
+          <div class="container">
+            <!-- START: Row -->
+            <div class="row">
+
+              <!-- START: Intro Column -->
+              <div class="col66">
+                <h1 class="blog-title wow animated fadeInLeft" data-wow-delay=".5s">A <span>Blog About</span> This Website</h1>
+                <p class="sub-text wow animated fadeInLeft" data-wow-delay=".9s">By Alex Clapperton</p>
+              </div>
+              <!-- END: Intro Column -->
+            </div>
+            <!-- END: Row -->
+          </div>
+          <!-- END: Container -->
+        </div>
+      </main>
+      <!--******************** MAIN CONTENT : End ********************-->
+    </div>
+
+    <!-- START: Scroll Down Btn -->
+    <div class="scroll-down">
+      <a href="#blog" class=""><i class="fa fa-angle-down"></i></a>
+    </div>
+    <!-- END: Scroll Down Btn -->
+    </section>
+    <!--******************** HOME SECTION : End ********************-->
+
+
+
+    <!--******************** BLOG SECTION : Start ********************-->
+    <section id="blog" class="blog">
+      <!-- START: Blog Content -->
+      <div class="blog-content">
+        <!-- START: Container -->
+        <div class="container">
+          <!-- START: Row -->
+          <div class="row">
+            <!-- START: Blog Image -->
+            <div class="blog-image">
+              <img src="images/blog-banner.jpg" alt="partial HTML code of this website" />
+            </div>
+            <!-- END: Blog Image -->
+
+            <h2 class="blog-post-title">A <span>Blog About</span> This Website</h2>
+            <!-- START: Blog Post Detail -->
+            <div class="blog-post-detail">
+              <p><i class="fa fa-user"></i> Alex Clapperton</p>
+              <p><i class="fa fa-clock-o"></i> 20/10/2015</p>
+            </div>
+            <!-- END: Blog Post Detail -->
+
+            <!-- START: Blog Post Body -->
+            <div class="blog-post-body">
+              <h3>The Layout</h3>
+
+              <p>I had decided from the very start of this project that I wanted to move in the direction of using a full width one column layout. The reason behind this decision is for the captivation that the site will receive from visitors. It also gives more space to the content that is present on each page, as using a multiple column layout can make the content look sqaushed and make the entire site look cramped.</p>
+
+              <p>By using a full width one column layout, it linked up respectively with Parallax scrolling. Parallax scrolling involves the background moving at a slower rate to the foreground, creating a 3D effect as you scroll down the page. It can sometimes be overwhelming, but when used sparingly it can provide a nice, subtle element of depth. I was able to acquire a Parallax JavaScript plugin on GitHub from <a href="http://pixelcog.github.io/parallax.js/">PixelCog Inc.</a> that I implemented at the top section of each page on the site.</p>
+
+              <h3>The Design</h3>
+
+              <p>For the design I decided to implement my favourite colour scheme of red, dark grey, white &amp; light grey. I believe these colours blend very well together and create a strong contrast between them, giving the website a professional, clean and sophisticated look.</p>
+
+              <img src="images/colour-pallette.jpg" alt="Colour pallette used on the website." class="colour-pallette" />
+              <p class="caption">Hex Codes: #d40000, #222222, #000000, #2c2c2c.</p>
+
+              <p>For my logo, I decided to use Adobe Illustrator as you can easily work with vectors. Using vectors means that no matter how much you scale up or down the content you create in Illustrator, the content will stay crisp and sharp which is a real benefit when creating logos. My design of the logo is very simple, consisting of only my initials A M C, which I believe matches the look and feel of my website. I had to create two versions of my logo, one black version and one white version, beacuse as the website scrolls, the navigation bar's position becomes fixed and the background of the navigation bar changes from transparent to white. As the navigation bar becomes white I had to write some JavaScript that changed the logo from white to black.</p>
+
+              <img src="images/navigation-javascript.jpg" alt="JavaScript code used to add class dark to navigation bar as user scrolls." class="javascript" />
+              <p class="caption">JavaScript code adds class 'dark' to navigation as user scrolls.</p>
+
+              <img src="images/navigation-css.jpg" alt="CSS that changes logo to black." class="css" />
+              <p class="caption">CSS used to change logo from white to black.</p>
+
+              <h3>HTML &amp; CSS Code</h3>
+
+              <p>For the HTML coding of the website I wanted to make sure the code was kept as clean as possible. To achieve this I used large comments to highlight the most important parts of the website, such as commenting when a section of a page starts and ends, when the navigation starts and ends etc. I also used smaller comments to highlight the start and end of each HTML tag element. By doing this I feel it is easier to navigate through the code and locate the correct opening and closing tag elements.</p>
+
+              <img src="images/html-comments.jpg" alt="Comments of opening and closing HTML tag element." />
+              <p class="caption">Large and small comments of an opening and closing HTML tag element.</p>
+
+              <p>In terms of the CSS coding, I decided to follow the CSS guidlines of the well known Harry Roberts. By using his methods I feel my code is very clean and can be easily read &amp; understood. As well as organising my CSS code into sections, I have implented a table of contents comment section at the top of the stylesheet so it is easy to navigate through the code.</p>
+
+              <img src="images/css-comments.jpg" alt="Harry Roberts style CSS coding and commenting." />
+              <p class="caption">CSS coding and commenting using Harry Roberts methods.</p>
+
+              <h3>Summary</h3>
+
+              <p>Overall I feel my website matches the correct standards and has a clean and professional look. It is HTML validated, the coding is clean and readable and the coding is very well commented.</p>
+
+              <p>Nearly all the images are lower than 25KB in size except for the main banner images at the top of each page, as I had to compensate a bit of extra image size to get a good enough quality image.</p>
+
+              <h3>References</h3>
+
+              <p>Below are a list of third-pary CSS stylesheets and JavaScript plugins that I have implemented on my website, with links to the origin of the files.</p>
+
+              <h4>CSS</h4>
+
+              <ul>
+                <li><a href="https://github.com/necolas/normalize.css">normalize.css</a> - <span>Nicolas Gallagher</span></li>
+                <li><a href="https://daneden.github.io/animate.css/">animate.css </a> - <span>Daniel Eden</span></li>
+                <li><a href="https://fortawesome.github.io/Font-Awesome/">font-awesome.css</a> - <span>Dave Gandy</span></li>
+              </ul>
+
+              <h4>JavaScript</h4>
+
+              <ul>
+                <li><a href="https://modernizr.com">modernizr.js</a> - <span>Modernizr</span></li>
+                <li><a href="https://code.jquery.com/jquery/">jquery-2.1.1.min.js</a> - <span>jQuery</span></li>
+                <li><a href="http://imakewebthings.com/waypoints/">waypoints.js</a> - <span>I Make Web Things</span></li>
+                <li><a href="https://github.com/kswedberg/jquery-smooth-scroll">jquery.smooth-scroll.js</a> - <span>Karl Swedberg</span></li>
+                <li><a href="http://pixelcog.github.io/parallax.js/">parallax.js</a> - <span>PixelCog Inc.</span></li>
+                <li><a href="http://scrollme.nckprsn.com">jquery.scrollme.js</a> - <span>Nick Pearson</span></li>
+                <li><a href="https://github.com/matthieua/WOW">wow.min.js</a> - <span>Matthieu Aussaguel</span></li>
+              </ul>
+            </div>
+            <!-- END: Blog Post Body -->
+          </div>
+          <!-- END: Row -->
+        </div>
+        <!-- END: Container -->
+      </div>
+      <!-- END: Blog Content -->
+    </section>
+    <!--******************** BLOG SECTION : End ********************-->
+
+
+
+    <!--******************** CONTACT SECTION : Start ********************-->
+    <section class="contact">
+      <!-- START: Section Title -->
+      <div class="section-title">
+        <!-- START: Container -->
+        <div class="container clearfix">
+          <!-- START: Row -->
+          <div class="row wow animated fadeInUp" data-wow-delay=".3s">
+            <div class="section-title-more">Want To Say Hello?</div>
+            <div class="section-title-heading"><h2><span>Contact</span> Me</h2></div>
+          </div>
+          <!-- END: Row -->
+        </div>
+        <!-- END: Container -->
+      </div>
+      <!-- End: Section Title -->
+
+      <!-- START: Container -->
+      <div class="container">
+        <!-- END: Container -->
+        <div class="row">
+          <!-- START: Col83 -->
+          <div class="col83">
+            <!-- START: Contact Form -->
+            <form id="ajax-contact" class="contact-form wow animated fadeInUp" data-wow-delay=".3s" action="mailer.php" method="post">
+              <fieldset>
+
+                <!-- START: Input -->
+                <div class="input col100">
+                  <label for="name" class="input-label">
+                      <span class="input-label-content" data-content="name">name *</span>
+                  </label>
+                  <input type="text" name="name" required="" id="name" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Input -->
+                <div class="input col50">
+                  <label for="email" class="input-label">
+                      <span class="input-label-content" data-content="email">email *</span>
+                  </label>
+                  <input type="email" name="email" required="" id="email" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Input -->
+                <div class="input col50">
+                  <label for="subject" class="input-label">
+                      <span class="input-label-content" data-content="subject">subject</span>
+                  </label>
+                  <input type="text" name="company" id="subject" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Textarea -->
+                <div class="message col100">
+                  <label for="message" class="textarea-label">message *</label>
+                  <textarea name="message" required="" id="message" class="textarea"></textarea>
+                </div>
+                <!-- END: Textarea -->
+
+                <div id="form-messages" class="form-message"></div>
+
+                <!-- START: Submit Button -->
+                <div class="col100">
+                  <button type="submit" name="submit" id="submit" class="submit">Submit</button>
+                </div>
+                <!-- END: Submit Button -->
+
+              </fieldset>
+            </form>
+            <!-- END: Contact Form -->
+          </div>
+          <!-- END: Col83 -->
+        </div>
+        <!-- END: Row -->
+      </div>
+      <!-- END: Container -->
+    </section>
+    <!--******************** CONTACT SECTION : Start ********************-->
+
+
+
+    <!--******************** FOOTER SECTION : Start ********************-->
+    <footer role="contentinfo">
+      <!-- START: Footer Social -->
+      <div class="footer-social">
+        <ul>
+          <li><a href="https://www.facebook.com/AlexMClapperton" title="Alex Clapperton's Facebook profile"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="https://twitter.com/AlexMClapperton" title="Alex Clapperton's Twitter profile"><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href="https://uk.linkedin.com/in/alexclapperton" title="Alex Clapperton's LinkedIn profile"><i class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- END: Footer Social -->
+
+      <!-- START: Go To Top Button -->
+      <div class="go-top wow animated bounceInUp">
+        <a href="#home" class="square" title="Scroll back to the top of the page"><span></span></a>
+      </div>
+      <!-- EBD: Go To Top Button -->
+
+      <!-- START: Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2015</a> | THIS IS STUDENT COURSEWORK | TUTOR <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></p>
+      </div>
+      <!-- END: Footer Bottom -->
+    </footer>
+    <!--******************** FOOTER SECTION : End ********************-->
+
+
+
+
+    <!-- JS Scripts -->
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.smooth-scroll.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery.scrollme.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
