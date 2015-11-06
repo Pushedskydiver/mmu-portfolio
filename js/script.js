@@ -8,19 +8,19 @@
 //------------------------------------- START: Smooth scroll setup ------------------------------------------------//
 
 $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top
-          -40}, 2000);
-            return false;
-             }
-            }
-         });
-      });
+  $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+      $('html,body').animate({
+          scrollTop: target.offset().top
+    -40}, 2000);
+      return false;
+       }
+      }
+   });
+});
 
 //------------------------------------- END: Smooth scroll setup ------------------------------------------------//
 
@@ -59,62 +59,61 @@ $(function() {
 //------------------------------------- START: Mobile navigation setup ------------------------------------------------//
 
 $(function() {
-      var ww = $(window).width();
+  var ww = $(window).width();
 
-			if (ww > 700) {
-				$('.trigger-nav').css('display', 'none');
-				$('.main-nav').css('display', 'block');
-			} else {
-				$('.trigger-nav').css('display', 'block');
-				$('.main-nav').css('display', 'none');
-			}
+  if (ww > 700) {
+  	$('.trigger-nav').css('display', 'none');
+  	$('.main-nav').css('display', 'block');
+  } else {
+  	$('.trigger-nav').css('display', 'block');
+  	$('.main-nav').css('display', 'none');
+  }
 
-			$('.trigger-nav').on('click', function() {
+  $('.trigger-nav').on('click', function() {
 
-				if (!$(this).hasClass('open-nav')) {
-					$(this).addClass('open-nav');
-					toggleNav(true);
-				} else {
-					$(this).removeClass('open-nav');
-					toggleNav(false);
-				}
+  	if (!$(this).hasClass('open-nav')) {
+  		$(this).addClass('open-nav');
+  		toggleNav(true);
+  	} else {
+  		$(this).removeClass('open-nav');
+  		toggleNav(false);
+  	}
 
-			});
+  });
 
-			$(window).bind('resize', function() {
+  $(window).bind('resize', function() {
 
-				if (ww > 700) {
-					$('.trigger-nav').css('display', 'none');
-					$('.main-nav').css('display', 'block');
+  	if (ww > 700) {
+  		$('.trigger-nav').css('display', 'none');
+  		$('.main-nav').css('display', 'block');
 
-					if ($('.trigger-nav').hasClass('open-nav')) {
-						$('.trigger-nav').removeClass('open-nav');
-					}
-				} else {
-					$('.trigger-nav').css('display', 'block');
-					$('.main-nav').css('display', 'none');
-				}
+  		if ($('.trigger-nav').hasClass('open-nav')) {
+  			$('.trigger-nav').removeClass('open-nav');
+  		}
+  	} else {
+  		$('.trigger-nav').css('display', 'block');
+  		$('.main-nav').css('display', 'none');
+  	}
 
-			});
+  });
 
-			$(window).bind('scroll', function() {
+  $(window).bind('scroll', function() {
 
-				if ($('.trigger-nav').hasClass('open-nav')) {
-					$('.trigger-nav').removeClass('open-nav');
-					toggleNav(false);
-				}
+  	if ($('.trigger-nav').hasClass('open-nav')) {
+  		$('.trigger-nav').removeClass('open-nav');
+  		toggleNav(false);
+  	}
 
-			});
+  });
 
-      function toggleNav(bool) {
+  function toggleNav(bool) {
 
-				if (bool === true) $('.main-nav').slideDown();
-				else $('.main-nav').slideUp();
+  	if (bool === true) $('.main-nav').slideDown();
+  	else $('.main-nav').slideUp();
 
-			}
+  }
 
-
-      });
+});
 
 //------------------------------------- END: Mobile navigation setup ------------------------------------------------//
 
@@ -141,48 +140,47 @@ $(".input-field").each(function () {
 
 $(function () {
 
+  // Get the form.
+  var form = $('#ajax-contact'),
+      // Get the messages div.
+      formMessages = $('#form-messages');
 
-    // Get the form.
-    var form = $('#ajax-contact'),
-        // Get the messages div.
-        formMessages = $('#form-messages');
-
-    // Set up an event listener for the contact form.
-    $(form).submit(function (e) {
-        // Stop the browser from submitting the form.
-        e.preventDefault();
-
-
-        // Serialize the form data.
-        var formData = $(form).serialize();
-
-        // Submit the form using AJAX.
-        $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            })
-            .done(function (response) {
-                // Make sure that the formMessages div has the 'success' class.
-                $(formMessages).removeClass('error').addClass('success').fadeIn().delay(5000).fadeOut();
-                // Set the message text.
-                $(formMessages).text(response);
-
-                // Clear the form.
-                $(form).trigger("reset");
-            })
-            .fail(function (data) {
-                // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('success').addClass('error').fadeIn().delay(5000).fadeOut();
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
-                }
+  // Set up an event listener for the contact form.
+  $(form).submit(function (e) {
+      // Stop the browser from submitting the form.
+      e.preventDefault();
 
 
-            });
+      // Serialize the form data.
+      var formData = $(form).serialize();
+
+      // Submit the form using AJAX.
+      $.ajax({
+              type: 'POST',
+              url: $(form).attr('action'),
+              data: formData
+          })
+          .done(function (response) {
+              // Make sure that the formMessages div has the 'success' class.
+              $(formMessages).removeClass('error').addClass('success').fadeIn().delay(5000).fadeOut();
+              // Set the message text.
+              $(formMessages).text(response);
+
+              // Clear the form.
+              $(form).trigger("reset");
+          })
+          .fail(function (data) {
+              // Make sure that the formMessages div has the 'error' class.
+              $(formMessages).removeClass('success').addClass('error').fadeIn().delay(5000).fadeOut();
+              // Set the message text.
+              if (data.responseText !== '') {
+                  $(formMessages).text(data.responseText);
+              } else {
+                  $(formMessages).text('Oops! An error occured and your message could not be sent.');
+              }
+
+
+          });
 
     });
 
