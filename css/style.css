@@ -890,7 +890,7 @@ section.contact .col83 form fieldset {
 .input-label-content:after {
   content: attr(data-content);
   position: absolute;
-  z-index: 700;
+  z-index: 15;
   bottom: 100%;
   left: 0;
   height: 110%;
