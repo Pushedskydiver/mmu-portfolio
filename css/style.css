@@ -1060,6 +1060,7 @@ overflow: visible;
 .footer-bottom p {
   color: #d5d5d5;
   font-size: 0.8em;
+  line-height: 1.7;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -1101,7 +1102,7 @@ overflow: visible;
 
 .blog-content {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .blog-image {
@@ -1319,10 +1320,6 @@ h2.blog-post-title span {
     width: 100%;
   }
 
-  main.main-home .social ul li a {
-    font-size: 0.8em;
-  }
-
   .about-content .col50 {
     width: 100%;
     float: none;
@@ -1419,6 +1416,24 @@ h2.blog-post-title span {
 
   .input.col50 {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px;) {
+  main.main-home h1 {
+    font-size: 2.4em;
+  }
+
+  main.main-home .social ul li a {
+    font-size: 1.9em;
+  }
+
+  .about-intro {
+    padding: 10% 0 !important;
+  }
+
+  .home-content h1.blog-title {
+    font-size: 2.8em;
   }
 }
 
