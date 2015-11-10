@@ -1063,6 +1063,7 @@ overflow: visible;
   line-height: 1.7;
   font-weight: 400;
   margin-bottom: 0;
+  padding: 0 15px;
 }
 
 .footer-bottom p a {
