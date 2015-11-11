@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
@@ -31,7 +32,7 @@ gulp.task('scripts', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src('src/images/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe((imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, use: [pngquant()] })))
     .pipe(gulp.dest('assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
 });
