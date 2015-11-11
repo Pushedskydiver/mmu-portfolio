@@ -172,20 +172,4 @@ $(function () {
 
 
 
-
-
-//------------------------------------- START: Parallax setup ------------------------------------------------//
-
-$('.parallax-window').parallax({
-    imageSrc: 'images/bg.jpg',
-  });
-
-  $('.parallax-window-blog').parallax({
-      imageSrc: 'images/blog-intro.jpg',
-    });
-
-//------------------------------------- END: Parallax setup ------------------------------------------------//
-
-
-
 })(jQuery);

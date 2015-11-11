@@ -50,7 +50,7 @@ gulp.task('default', ['clean'], function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('src/style/*.css', ['minify-css']);
+  gulp.watch('src/style/*.css', ['styles']);
 
   // Watch .js files
   gulp.watch('src/js/*.js', ['scripts']);
