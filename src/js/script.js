@@ -88,6 +88,15 @@ $(function() {
 
   });
 
+  $(window).bind('scroll', function() {
+
+    if ($('.trigger-nav').hasClass('open-nav')) {
+      $('.trigger-nav').removeClass('open-nav');
+      toggleNav(false);
+    }
+
+  });
+
   function toggleNav(bool) {
 
   	if (bool === true) $('.main-nav').slideDown();
