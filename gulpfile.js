@@ -1,12 +1,18 @@
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
+    concatCss = require('gulp-concat-css'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
+    bower = require('gulp-bower'),
+    mainBowerFiles = require('main-bower-files'),
+    filter = require('gulp-filter'),
+    order = require('gulp-order'),
     cache = require('gulp-cache'),
+    concat = require('gulp-concat'),
     watch = require('gulp-watch'),
     del = require('del');
 
@@ -37,6 +43,35 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+// JS Concat
+gulp.task('js', function() {
+
+	var jsFiles = ['src/js/*'];
+
+	gulp.src(mainBowerFiles().concat(jsFiles))
+		.pipe(filter('*.js'))
+		.pipe(concat('main.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('assets/js'));
+});
+
+// CSS Concat
+gulp.task('css', function() {
+
+	var cssFiles = ['src/css/*'];
+
+	gulp.src(mainBowerFiles().concat(cssFiles))
+		.pipe(filter('*.css'))
+    .pipe(order([
+			'normalize.css',
+      'style.css',
+			'*'
+		]))
+		.pipe(concat('main.css'))
+		.pipe(minifycss())
+		.pipe(gulp.dest('assets/css'));
+});
+
 // Clean
 gulp.task('clean', function() {
     return del(['assets/css', 'assets/images', 'assets/js']);
@@ -47,14 +82,19 @@ gulp.task('default', ['clean'], function() {
     gulp.start('styles', 'scripts', 'images');
 });
 
+gulp.task('bower', function() {
+  return bower()
+    .pipe(gulp.dest('src/components/'))
+});
+
 // Watch
 gulp.task('watch', function() {
 
-  // Watch .scss files
-  gulp.watch('src/style/*.css', ['styles']);
+  // Watch .css files
+  gulp.watch('src/style/*', ['css']);
 
   // Watch .js files
-  gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('src/js/*', ['js']);
 
   // Watch image files
   gulp.watch('src/images/*', ['images']);
