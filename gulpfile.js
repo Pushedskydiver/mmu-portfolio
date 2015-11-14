@@ -52,7 +52,8 @@ gulp.task('js', function() {
 		.pipe(filter('*.js'))
 		.pipe(concat('main.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('assets/js'));
+		.pipe(gulp.dest('assets/js'))
+    .pipe(notify({ message: 'JS task complete' }));
 });
 
 // CSS Concat
@@ -69,7 +70,8 @@ gulp.task('css', function() {
 		]))
 		.pipe(concat('main.css'))
 		.pipe(minifycss())
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('assets/css'))
+    .pipe(notify({ message: 'CSS task complete' }));
 });
 
 // Clean
