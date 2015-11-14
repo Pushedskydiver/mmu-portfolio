@@ -91,7 +91,7 @@ gulp.task('bower', function() {
 gulp.task('watch', function() {
 
   // Watch .css files
-  gulp.watch('src/style/*', ['css']);
+  gulp.watch('src/css/*', ['css']);
 
   // Watch .js files
   gulp.watch('src/js/*', ['js']);
