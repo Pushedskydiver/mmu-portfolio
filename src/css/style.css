@@ -8,8 +8,9 @@
     #5 CONTACT-SECTION
     #6 FOOTER-SECTION
     #7 BLOG-PAGE
-    #8 ANIMATION-KEYFRAMES
-    #9 MEDIA-QUERIES
+    #8
+    #9 ANIMATION-KEYFRAMES
+    #10 MEDIA-QUERIES
 \*------------------------------------*/
 
 
@@ -1244,7 +1245,45 @@ h2.blog-post-title span {
 
 
 /*------------------------------------*\
-    #8 ANIMATION-KEYFRAMES
+    #8 TOOLS-SECTION
+\*------------------------------------*/
+
+.my-tools {
+  background: #f2f2f2;
+  padding: 20px 20px 80px;
+  overflow: hidden;
+}
+
+.tools-images ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.tools-images ul li {
+  display: inline-block;
+  padding: 0 2.5em;
+}
+
+.tools-images ul li:first-child {
+  padding-left: 0;
+}
+
+.tools-images ul li:last-child {
+  padding-right: 0;
+}
+
+.tools-images ul li img {
+  height: 80px;
+  width: auto;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #9 ANIMATION-KEYFRAMES
 \*------------------------------------*/
 
 @-webkit-keyframes fadeInOutDown {
@@ -1294,7 +1333,7 @@ h2.blog-post-title span {
 
 
 /*------------------------------------*\
-    #9 MEDIA-QUERIES
+    #10 MEDIA-QUERIES
 \*------------------------------------*/
 
 @media (max-width: 1200px) {
@@ -1318,6 +1357,10 @@ h2.blog-post-title span {
     width: 100%;
   }
 
+  .tools-images ul li {
+    padding: 0 2.4em;
+  }
+
   .about-content .col50 {
     width: 100%;
     float: none;
@@ -1329,7 +1372,6 @@ h2.blog-post-title span {
     max-width: 100%;
     width: 100%;
   }
-
 
   .about-intro {
     padding: 10% !important;
@@ -1352,16 +1394,22 @@ h2.blog-post-title span {
   }
 }
 
+@media (max-width: 768px) {
+  .tools-images ul li {
+    padding: 0 1.8em;
+  }
+
+  .tools-images ul li img {
+    height: 65px;
+  }
+}
 
 @media (max-width: 700px) {
   .row {
     margin-left: 0;
     margin-right: 0;
   }
-}
 
-
-@media (max-width: 700px) {
   nav .container {
     position: relative;
   }
@@ -1420,6 +1468,21 @@ h2.blog-post-title span {
   }
 }
 
+@media (max-width: 655px) {
+  .my-tools {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .tools-images ul li {
+    padding: 0 1em;
+  }
+
+  .tools-images ul li img {
+    height: 50px;
+  }
+}
+
 @media (max-width: 480px) {
   main.main-home h1 {
     font-size: 2.4em;
@@ -1427,6 +1490,22 @@ h2.blog-post-title span {
 
   main.main-home .social ul li a {
     font-size: 1.9em;
+  }
+
+  .tools-images ul li {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0;
+  }
+
+  .tools-images ul li img {
+    width: 30%;
+    height: auto;
+  }
+
+  .tools-images ul li:last-child img {
+    width: 45%;
   }
 
   .about-intro {
