@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Welcome to Alex Clapperton's Website. As a student at Manchester Metropolitan University I am required to create a portfolio website as part of my project.">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <title>Portfolio | Alex Clapperton - Web Development, Manchester Metropolitan University</title>
+
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+
+    <!-- STYLSEHEETS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  </head>
+  <body>
+
+    <!-- SKIP TO CONTENT - Hidden off screen -->
+    <div class="skip-to-content">
+      <a href="#about">Skip to content</a>
+    </div>
+
+    <!--******************** HOME SECTION : Start ********************-->
+    <section id="home" class="home scrollme parallax-window" data-parallax="scroll" data-image-src="assets/images/bg.jpg">
+    <!--******************** NAVIGATION : Start ********************-->
+    <header role="banner">
+      <nav class="nav animated fadeInDown" role="navigation">
+        <div class="container clearfix">
+
+          <!-- START: Logo -->
+          <div class="logo">
+            <a href="#home" title="Alex Clapperton">
+              <div class="nav-logo logo-black"></div>
+              <p>Alex Clapperton</p></a>
+          </div>
+          <!-- END: Logo -->
+
+          <!-- START: Mobile Nav -->
+          <div class="trigger-nav">
+						<div class="inner">
+							<span class="icon-bar top"></span>
+							<span class="icon-bar middle"></span>
+							<span class="icon-bar bottom"></span>
+						</div>
+					</div>
+          <!-- EBD: Mobile Nav -->
+
+          <!-- START: Main Nav -->
+          <div class="main-nav">
+            <ul>
+              <li class="active"><a href="index.html" class="roll-link">Home</a></li>
+              <li onclick="document.location.href='acw.html';"><a href="acw.html" class="roll-link"><span data-title="Assignment">Assignment</span></a></li>
+              <li onclick="document.location.href='blog.html';"><a href="blog.html" class="roll-link"><span data-title="Blog">Blog</span></a></li>
+            </ul>
+          </div>
+          <!-- END: Main Nav -->
+        </div>
+      </nav>
+    </header>
+    <!--******************** NAVIGATION : End ********************-->
+
+
+    <!--******************** MAIN CONTENT : Start ********************-->
+    <div class="animateme" data-when="exit" data-from="0" data-to="0.7" data-easing="easeinout" data-opacity="0" data-translatey="-200">
+      <main class="main-home" role="main">
+        <div class="home-content">
+          <!-- START: Container -->
+          <div class="container">
+            <!-- START: Row -->
+            <div class="row">
+
+              <!-- START: Intro Column -->
+              <div class="col50">
+                <h1 class="wow animated fadeInLeft" data-wow-delay=".5s">Hello, my name is Alex Clapperton.</h1>
+                <p class="home-desc wow animated fadeInLeft" data-wow-delay=".9s">I am 23 years old and I'm a Junior and freelance Web Developer.</p>
+
+                <!-- START: Social Links -->
+                <div class="social wow animated fadeInLeft" data-wow-delay="1.3s">
+                  <ul>
+                    <li><a href="https://www.facebook.com/AlexMClapperton" title="Alex Clapperton's Facebook profile"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li><a href="https://twitter.com/AlexMClapperton" title="Alex Clapperton's Twitter profile"><i class="fa fa-twitter fa-fw"></i></a></li>
+                    <li><a href="https://uk.linkedin.com/in/alexclapperton" title="Alex Clapperton's LinkedIn profile"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                  </ul>
+                </div>
+                <!-- END: Social Links -->
+
+                <p class="learn-more wow animated fadeInLeft" data-wow-delay="1.7s"><a href="#about" class="">Learn more about me...</a></p>
+              </div>
+              <!-- END: Intro Column -->
+            </div>
+            <!-- END: Row -->
+          </div>
+          <!-- END: Container -->
+        </div>
+      </main>
+      <!--******************** MAIN CONTENT : End ********************-->
+    </div>
+
+    <!-- START: Scroll Down Btn -->
+    <div class="scroll-down">
+      <a href="#about" class=""><i class="fa fa-angle-down"></i></a>
+    </div>
+    <!-- END: Scroll Down Btn -->
+    </section>
+    <!--******************** HOME SECTION : End ********************-->
+
+
+
+    <!--******************** PORTFOLIO SECTION : Start ********************-->
+    <section class="portfolio-section">
+
+      <!-- START: Section Title -->
+      <div class="section-title">
+        <!-- START: Container -->
+        <div class="container clearfix">
+          <!-- START: Row -->
+          <div class="row wow animated bounceInLeft" data-wow-delay=".3s">
+            <div class="section-title-more">First you should know</div>
+            <div class="section-title-heading"><h2>About <span>Alex Clapperton</span></h2></div>
+          </div>
+          <!-- END: Row -->
+        </div>
+        <!-- END: Container -->
+      </div>
+      <!-- END: Section Title -->
+
+      <div class="portfolio-content">
+        <div class="container">
+          <div class="row">
+            <div class="portfolio-filter wow animated fadeIn" data-wow-offset="100" data-wow-delay=".3s">
+              <div class="controls ripple">
+                <button class="filter" data-filter="all">All Work</button>
+                <span class="seperator">&#124;</span>
+                <button class="filter" data-filter=".web-design">Web Design</button>
+                <span class="seperator">&#124;</span>
+                <button class="filter" data-filter=".graphic-design">Graphic Design</button>
+              </div>
+            </div>
+
+
+            <ul id="portfolio-container" class="portfolio-container clearlist wow animated fadeIn" data-wow-delay=".6s">
+          		<li class="portfolio-item mix web-design col33" data-myorder="1">
+          			<div class="portfolio-item-img"><img src="assets/images/portfolio/media-making-portfolio-website-thumbnail.png" alt=""></div>
+
+          			<div class="portfolio-item-info">
+          				<h3 class="portfolio-item-title">Media Making Portfolio</h3>
+          				<div class="portfolio-item-detail">
+          					<p>MMU 1st year portfilio project.</p>
+          					<a href="assets/images/portfolio/media-making-portfolio-website-thumbnail.png" title="Media Making Portfolio" class="icon-magnifying-glass lightbox"></a>
+          					<a href="#" class="animsition-link icon-attachment"></a>
+          				</div>
+          			</div>
+          		</li
+
+
+          		><li class="portfolio-item mix graphic-design col33" data-myorder="2">
+          			<div class="portfolio-item-img"><img src="assets/images/portfolio/man-of-steel.png" alt=""></div>
+
+          			<div class="portfolio-item-info">
+          				<h3 class="portfolio-item-title">Man Of Steel Poster</h3>
+          				<div class="portfolio-item-detail">
+          					<p>Man of Steel movie poster made in Adobe Photoshop.</p>
+          					<a href="assets/images/portfolio/man-of-steel.png" title="Man Of Steel Poster" class="icon-magnifying-glass lightbox"></a>
+          					<a href="#" class="animsition-link icon-attachment"></a>
+          				</div>
+          			</div>
+          		</li
+
+
+          		><li class="portfolio-item mix web-design col33" data-myorder="3">
+          			<div class="portfolio-item-img"><img src="assets/images/portfolio/media-making-group-website-thumbnail.png" alt=""></div>
+
+          			<div class="portfolio-item-info">
+          				<h3 class="portfolio-item-title">Media Making Group Website</h3>
+          				<div class="portfolio-item-detail">
+          					<p>MMU 1st year group video project.</p>
+          					<a href="assets/images/portfolio/media-making-group-website-thumbnail.png" title="Media Making Group Website" class="icon-magnifying-glass lightbox"></a>
+          					<a href="#" class="animsition-link icon-attachment"></a>
+          				</div>
+          			</div>
+          		</li
+
+
+          		><li class="portfolio-item mix graphic-design col33" data-myorder="4">
+          			<div class="portfolio-item-img"><img src="assets/images/portfolio/winter-soldier.png" alt=""></div>
+
+          			<div class="portfolio-item-info">
+          				<h3 class="portfolio-item-title">Winter Soldier Poster</h3>
+          				<div class="portfolio-item-detail">
+          					<p>Winter Soldier movie poster made in Adobe Photoshop.</p>
+          					<a href="assets/images/portfolio/winter-soldier.png" title="Winter Soldier Poster" class="icon-magnifying-glass lightbox"></a>
+          					<a href="#" class="animsition-link icon-attachment"></a>
+          				</div>
+          			</div>
+          		</li>
+        	  </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--******************** PORTFOLIO SECTION : End ********************-->
+
+
+    <!--******************** CONTACT SECTION : Start ********************-->
+    <section class="contact">
+      <!-- START: Section Title -->
+      <div class="section-title">
+        <!-- START: Container -->
+        <div class="container clearfix">
+          <!-- START: Row -->
+          <div class="row wow animated fadeInUp" data-wow-delay=".3s">
+            <div class="section-title-more">Want To Say Hello?</div>
+            <div class="section-title-heading"><h2><span>Contact</span> Me</h2></div>
+          </div>
+          <!-- END: Row -->
+        </div>
+        <!-- END: Container -->
+      </div>
+      <!-- End: Section Title -->
+
+      <!-- START: Container -->
+      <div class="container">
+        <!-- END: Container -->
+        <div class="row">
+          <!-- START: Col83 -->
+          <div class="col83">
+            <!-- START: Contact Form -->
+            <form id="ajax-contact" class="contact-form wow animated fadeInUp" data-wow-delay=".3s" action="mailer.php" method="post">
+              <fieldset>
+
+                <!-- START: Input -->
+                <div class="input col100">
+                  <label for="name" class="input-label">
+                      <span class="input-label-content" data-content="name">name *</span>
+                  </label>
+                  <input type="text" name="name" required="" id="name" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Input -->
+                <div class="input col50">
+                  <label for="email" class="input-label">
+                      <span class="input-label-content" data-content="email">email *</span>
+                  </label>
+                  <input type="email" name="email" required="" id="email" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Input -->
+                <div class="input col50">
+                  <label for="subject" class="input-label">
+                      <span class="input-label-content" data-content="subject">subject</span>
+                  </label>
+                  <input type="text" name="company" id="subject" class="input-field">
+                </div>
+                <!-- END: Input -->
+
+                <!-- START: Textarea -->
+                <div class="message col100">
+                  <label for="message" class="textarea-label">message *</label>
+                  <textarea name="message" required="" id="message" class="textarea"></textarea>
+                </div>
+                <!-- END: Textarea -->
+
+                <div id="form-messages" class="form-message"></div>
+
+                <!-- START: Submit Button -->
+                <div class="col100">
+                  <button type="submit" name="submit" id="submit" class="submit">Submit</button>
+                </div>
+                <!-- END: Submit Button -->
+
+              </fieldset>
+            </form>
+            <!-- END: Contact Form -->
+          </div>
+          <!-- END: Col83 -->
+        </div>
+        <!-- END: Row -->
+      </div>
+      <!-- END: Container -->
+    </section>
+    <!--******************** CONTACT SECTION : Start ********************-->
+
+
+
+    <!--******************** FOOTER SECTION : Start ********************-->
+    <footer role="contentinfo">
+      <!-- START: Footer Social -->
+      <div class="footer-social">
+        <ul>
+          <li><a href="https://www.facebook.com/AlexMClapperton" title="Alex Clapperton's Facebook profile"><i class="fa fa-facebook fa-fw"></i></a></li>
+          <li><a href="https://twitter.com/AlexMClapperton" title="Alex Clapperton's Twitter profile"><i class="fa fa-twitter fa-fw"></i></a></li>
+          <li><a href="https://uk.linkedin.com/in/alexclapperton" title="Alex Clapperton's LinkedIn profile"><i class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+      </div>
+      <!-- END: Footer Social -->
+
+      <!-- START: Go To Top Button -->
+      <div class="go-top wow animated bounceInUp">
+        <a href="#home" class="square" title="Scroll back to the top of the page"><span></span></a>
+      </div>
+      <!-- END: Go To Top Button -->
+
+      <!-- START: Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <a href="http://www.mmu.ac.uk/" title="MMU homepage">MMU 2015</a> | THIS IS STUDENT COURSEWORK | TUTOR <a href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a> | <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></p>
+      </div>
+      <!-- END: Footer Bottom -->
+    </footer>
+    <!--******************** FOOTER SECTION : End ********************-->
+
+
+
+
+    <!-- JS Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>new WOW().init();</script>
+    <script src="assets/js/jquery.materialripple.js"></script>
+  </body>
+</html>

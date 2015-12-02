@@ -112,6 +112,45 @@ $(function() {
 
 
 
+//------------------------------------- START: Nivo lightbox setup ------------------------------------------------//
+
+$('a').nivoLightbox({
+  effect: 'slideUp',
+  theme: 'default',
+  keyboardNav: true,
+  clickOverlayToClose: true,
+  errorMessage: 'The requested content cannot be loaded. Please try again later.'
+});
+
+
+
+
+$('#portfolio-container').mixItUp({
+  animation: {
+    duration: 480,
+        effects: 'fade translateX(10%) scale(0.25) stagger(58ms)',
+        easing: 'ease'
+  }
+});
+
+//------------------------------------- END: Nivo lightbox setup ------------------------------------------------//
+
+
+
+
+
+//------------------------------------- START: Material Ripple setup ------------------------------------------------//
+
+$(function(){
+    $('.ripple').materialripple();
+  });
+
+//------------------------------------- END: Material Ripple setup ------------------------------------------------//
+
+
+
+
+
 //------------------------------------- START: Contact form animation setup ------------------------------------------------//
 
 $(".input-field").each(function () {

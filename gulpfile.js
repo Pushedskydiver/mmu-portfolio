@@ -66,6 +66,7 @@ gulp.task('css', function() {
     .pipe(order([
 			'normalize.css',
       'style.css',
+      'animate.css',
 			'*'
 		]))
 		.pipe(concat('main.css'))
