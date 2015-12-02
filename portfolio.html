@@ -47,7 +47,8 @@
           <!-- START: Main Nav -->
           <div class="main-nav">
             <ul>
-              <li class="active"><a href="index.html" class="roll-link">Home</a></li>
+              <li onclick="document.location.href='index.html';"><a href="index.html" class="roll-link"><span data-title="Home">Home</span></a></li>
+              <li class="active" onclick="document.location.href='portfolio.html';"><a href="portfolio.html" class="roll-link">Portfolio</a></li>
               <li onclick="document.location.href='acw.html';"><a href="acw.html" class="roll-link"><span data-title="Assignment">Assignment</span></a></li>
               <li onclick="document.location.href='blog.html';"><a href="blog.html" class="roll-link"><span data-title="Blog">Blog</span></a></li>
             </ul>
@@ -123,10 +124,15 @@
       </div>
       <!-- END: Section Title -->
 
+      <!-- START: Portfolio Content -->
       <div class="portfolio-content">
+        <!-- START: Container -->
         <div class="container">
+          <!-- START: Row -->
           <div class="row">
+            <!-- START: Portfolio Filter -->
             <div class="portfolio-filter wow animated fadeIn" data-wow-offset="100" data-wow-delay=".3s">
+              <!-- START: Controls -->
               <div class="controls ripple">
                 <button class="filter" data-filter="all">All Work</button>
                 <span class="seperator">&#124;</span>
@@ -134,10 +140,13 @@
                 <span class="seperator">&#124;</span>
                 <button class="filter" data-filter=".graphic-design">Graphic Design</button>
               </div>
+              <!-- END: Controls -->
             </div>
+            <!-- END: Portfolio Filter -->
 
-
+            <!-- START: Portfolio Container -->
             <ul id="portfolio-container" class="portfolio-container clearlist wow animated fadeIn" data-wow-delay=".6s">
+              <!-- START: Portfolio Item -->
           		<li class="portfolio-item mix web-design col33" data-myorder="1">
           			<div class="portfolio-item-img"><img src="assets/images/portfolio/media-making-portfolio-website-thumbnail.png" alt=""></div>
 
@@ -146,13 +155,14 @@
           				<div class="portfolio-item-detail">
           					<p>MMU 1st year portfilio project.</p>
           					<a href="assets/images/portfolio/media-making-portfolio-website-thumbnail.png" title="Media Making Portfolio" class="icon-magnifying-glass lightbox"></a>
-          					<a href="#" class="animsition-link icon-attachment"></a>
+          					<a href="http://www.11063905.webdevmmu.uk/year-one-website/" class="animsition-link icon-attachment"></a>
           				</div>
           			</div>
-          		</li
+          		</li>
+              <!-- END: Portfolio Item -->
 
-
-          		><li class="portfolio-item mix graphic-design col33" data-myorder="2">
+              <!-- START: Portfolio Item -->
+              <li class="portfolio-item mix graphic-design col33" data-myorder="2">
           			<div class="portfolio-item-img"><img src="assets/images/portfolio/man-of-steel.png" alt=""></div>
 
           			<div class="portfolio-item-info">
@@ -160,13 +170,13 @@
           				<div class="portfolio-item-detail">
           					<p>Man of Steel movie poster made in Adobe Photoshop.</p>
           					<a href="assets/images/portfolio/man-of-steel.png" title="Man Of Steel Poster" class="icon-magnifying-glass lightbox"></a>
-          					<a href="#" class="animsition-link icon-attachment"></a>
           				</div>
           			</div>
-          		</li
+          		</li>
+              <!-- END: Portfolio Item -->
 
-
-          		><li class="portfolio-item mix web-design col33" data-myorder="3">
+              <!-- START: Portfolio Item -->
+              <li class="portfolio-item mix web-design col33" data-myorder="3">
           			<div class="portfolio-item-img"><img src="assets/images/portfolio/media-making-group-website-thumbnail.png" alt=""></div>
 
           			<div class="portfolio-item-info">
@@ -174,13 +184,14 @@
           				<div class="portfolio-item-detail">
           					<p>MMU 1st year group video project.</p>
           					<a href="assets/images/portfolio/media-making-group-website-thumbnail.png" title="Media Making Group Website" class="icon-magnifying-glass lightbox"></a>
-          					<a href="#" class="animsition-link icon-attachment"></a>
+          					<a href="http://www.11063905.webdevmmu.uk/year-one-group-website/" class="animsition-link icon-attachment"></a>
           				</div>
           			</div>
-          		</li
+          		</li>
+              <!-- END: Portfolio Item -->
 
-
-          		><li class="portfolio-item mix graphic-design col33" data-myorder="4">
+              <!-- START: Portfolio Item -->
+              <li class="portfolio-item mix graphic-design col33" data-myorder="4">
           			<div class="portfolio-item-img"><img src="assets/images/portfolio/winter-soldier.png" alt=""></div>
 
           			<div class="portfolio-item-info">
@@ -188,14 +199,18 @@
           				<div class="portfolio-item-detail">
           					<p>Winter Soldier movie poster made in Adobe Photoshop.</p>
           					<a href="assets/images/portfolio/winter-soldier.png" title="Winter Soldier Poster" class="icon-magnifying-glass lightbox"></a>
-          					<a href="#" class="animsition-link icon-attachment"></a>
           				</div>
           			</div>
           		</li>
+              <!-- END: Portfolio Item -->
         	  </ul>
+            <!-- END: Portfolio Container -->
           </div>
+          <!-- END: Row -->
         </div>
+        <!-- END: Container -->
       </div>
+      <!-- END: Portfolio Content -->
     </section>
     <!--******************** PORTFOLIO SECTION : End ********************-->
 
@@ -279,7 +294,7 @@
       </div>
       <!-- END: Container -->
     </section>
-    <!--******************** CONTACT SECTION : Start ********************-->
+    <!--******************** CONTACT SECTION : End ********************-->
 
 
 
