@@ -1344,24 +1344,32 @@ section.portfolio-section {
 	width: 80px;
 }
 
-.portfolio-item:hover .portfolio-item-img img {
+.portfolio-item:hover .portfolio-item-img img,
+.portfolio-item:focus .portfolio-item-img img,
+.portfolio-item:active .portfolio-item-img img {
   -webkit-transform: rotate(10deg) scale(1.5);
   -moz-transform: rotate(10deg) scale(1.5);
   -ms-transform: rotate(10deg) scale(1.5);
   -o-transform: rotate(10deg) scale(1.5);
   transform: rotate(10deg) scale(1.5);
 }
-.portfolio-item:hover .portfolio-item-img:after {
+.portfolio-item:hover .portfolio-item-img:after,
+.portfolio-item:focus .portfolio-item-img:after,
+.portfolio-item:active .portfolio-item-img:after {
   opacity: 1;
 }
 
-.portfolio-item:hover .portfolio-item-title {
+.portfolio-item:hover .portfolio-item-title,
+.portfolio-item:focus .portfolio-item-title,
+.portfolio-item:active .portfolio-item-title {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-.portfolio-item:hover .portfolio-item-detail {
+.portfolio-item:hover .portfolio-item-detail,
+.portfolio-item:focus .portfolio-item-detail,
+.portfolio-item:active .portfolio-item-detail {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0) scale(1);
   transform: translate3d(0, 0, 0) scale(1);
