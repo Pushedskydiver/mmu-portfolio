@@ -1919,6 +1919,24 @@ h2.blog-post-title span {
   .home-content h1.blog-title {
     font-size: 2.8em;
   }
+
+  .controls button {
+    font-size: 9px;
+    min-width: 100px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .controls button {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .controls .seperator {
+    display: none;
+  }
 }
 
 
