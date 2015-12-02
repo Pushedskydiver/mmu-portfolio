@@ -38,7 +38,7 @@ gulp.task('scripts', function() {
 // Images
 gulp.task('images', function() {
   return gulp.src('src/images/*')
-    .pipe((imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, use: [pngquant()] })))
+    .pipe((imagemin({ optimizationLevel: 5, progressive: true, interlaced: true, use: [pngquant()] })))
     .pipe(gulp.dest('assets/images'))
     .pipe(notify({ message: 'Images task complete' }));
 });
