@@ -112,6 +112,55 @@ $(function() {
 
 
 
+$(function() {
+  var $window = $(window),
+      $scrollProgressBar = $("#scroll-progressbar").find("div");
+      $window.scroll(function() {
+          var value = $(document).scrollTop(),
+              max = $(document).height() - $window.height();
+          $scrollProgressBar.width((value / max) * 100 + "%");
+      });
+});
+
+
+
+
+
+//------------------------------------- START: Skill bar setup ------------------------------------------------//
+
+$(function() {
+var $window = $(window),
+    $winWidth = $window.width(),
+    $skillBars = $("#skillbars"),
+    $skillBar = $skillBars.find(".skillbar-bar"),
+    $allSklBrs = $(".skillbar-bar");
+
+
+    if ($skillBars.length) {
+        if ($winWidth >= 768) {
+            $skillBars.waypoint(function() {
+                $skillBar.each(function() {
+                    var $this = $(this);
+                    $this.width($this.data("percent"));
+                });
+            }, {
+                offset: "60%"
+            });
+        } else {
+            $allSklBrs.each(function() {
+                var $this = $(this);
+                $this.width($this.data("percent"));
+            });
+        }
+    }
+});
+
+//------------------------------------- END: Skill bar setup ------------------------------------------------//
+
+
+
+
+
 //------------------------------------- START: Nivo lightbox setup ------------------------------------------------//
 
 $('a').nivoLightbox({

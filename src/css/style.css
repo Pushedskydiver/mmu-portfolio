@@ -378,6 +378,70 @@ nav:after, .logo:after, .row:after, .clearfix:after, .container-fluid:after,
   font-weight: 700;
 }
 
+/* scroll progress bar */
+#scroll-progressbar {
+  display: none;
+}
+
+#scroll-progressbar {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 99999;
+}
+
+#scroll-progressbar div {
+  position: relative;
+  height: 100%;
+  width: 0;
+  -webkit-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out;
+}
+
+#scroll-progressbar .scroll-shadow {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+.scroll-progressbar {
+  background: rgba(12, 12, 23, 0.05);
+}
+.scroll-progressbar div {
+  background: #d40000;
+}
+.scroll-progressbar .scroll-shadow {
+  box-shadow: 0 0 10px #d40000, 0 0 5px #d40000;
+}
+
+/* delay timers */
+.delay0-4s {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s !important;
+}
+
+.delay0-8s {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+  -webkit-transition-delay: .8s;
+  transition-delay: .8s !important;
+}
+
+.delay1-2s {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s !important;
+}
+
 
 
 
