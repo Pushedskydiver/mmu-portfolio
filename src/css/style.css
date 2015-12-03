@@ -1576,6 +1576,10 @@ h2.blog-post-title span {
   padding-right: 0;
 }
 
+.tools-images ul li a {
+  display: block;
+}
+
 .tools-images ul li img {
   height: 80px;
   width: auto;
