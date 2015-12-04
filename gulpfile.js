@@ -13,35 +13,9 @@ var gulp = require('gulp'),
     order = require('gulp-order'),
     cache = require('gulp-cache'),
     concat = require('gulp-concat'),
+    livereload = require('gulp-livereload'),
     watch = require('gulp-watch'),
     del = require('del');
-
-// Styles
-gulp.task('styles', function() {
-  return gulp.src('src/css/*.css')
-    .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('assets/css'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
-    .pipe(gulp.dest('assets/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
-});
-
-// Scripts
-gulp.task('scripts', function() {
-  return gulp.src('src/js/*.js')
-    .pipe(uglify())
-    .pipe(gulp.dest('assets/js'))
-    .pipe(notify({ message: 'Scripts task complete' }));
-});
-
-// Images
-gulp.task('images', function() {
-  return gulp.src('src/images/*')
-    .pipe((imagemin({ optimizationLevel: 5, progressive: true, interlaced: true, use: [pngquant()] })))
-    .pipe(gulp.dest('assets/images'))
-    .pipe(notify({ message: 'Images task complete' }));
-});
 
 // JS Concat
 gulp.task('js', function() {
@@ -72,19 +46,11 @@ gulp.task('css', function() {
 		.pipe(concat('main.css'))
 		.pipe(minifycss())
 		.pipe(gulp.dest('assets/css'))
-    .pipe(notify({ message: 'CSS task complete' }));
+    .pipe(notify({ message: 'CSS task complete' }))
+    .pipe(livereload());
 });
 
-// Clean
-gulp.task('clean', function() {
-    return del(['assets/css', 'assets/images', 'assets/js']);
-});
-
-// Default task
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images');
-});
-
+// Bower
 gulp.task('bower', function() {
   return bower()
     .pipe(gulp.dest('src/components/'))
@@ -93,13 +59,21 @@ gulp.task('bower', function() {
 // Watch
 gulp.task('watch', function() {
 
+  // Create LiveReload server
+  livereload.listen();
+
+  // Watch any files in src/, reload on change
+  gulp.watch(['src/**']).on('change', livereload.changed);
+
   // Watch .css files
   gulp.watch('src/css/*', ['css']);
 
   // Watch .js files
   gulp.watch('src/js/*', ['js']);
 
-  // Watch image files
-  gulp.watch('src/images/*', ['images']);
+});
 
+// Default task
+gulp.task('default', function() {
+    gulp.start('css', 'js', 'watch');
 });
