@@ -113,6 +113,26 @@ $(function() {
 
 
 $(function() {
+    var $particlsA = $("#particles");
+    if ($particlsA.length) {
+        $particlsA.particleground({
+            minSpeedX: 0.6,
+            minSpeedY: 0.6,
+            dotColor: '#ffffff',
+            lineColor: '#ffffff',
+            density: 6000,
+            particleRadius: 2, // curvedLines: true,
+            parallaxMultiplier: 5.2,
+            proximity: 0
+        });
+    }
+});
+
+
+
+
+
+$(function() {
   var $window = $(window),
       $scrollProgressBar = $("#scroll-progressbar").find("div");
       $window.scroll(function() {

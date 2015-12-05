@@ -762,6 +762,32 @@ nav {
   transform: rotate(-45deg);
 }
 
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particles {
+  opacity: .5;
+}
+
+.particles-js {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 40%;
+  height: 30%;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
 main.main-home {
   position: absolute;
   color: #2c2c2c;
@@ -776,6 +802,11 @@ main.main-home .home-content {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+main.main-home .home-content .col50 {
+  position: relative;
+  z-index: 20;
 }
 
 main.main-home h1 {
