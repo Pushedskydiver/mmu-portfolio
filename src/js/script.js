@@ -161,7 +161,37 @@ var $window = $(window),
 
 
 
-//------------------------------------- START: Nivo lightbox setup ------------------------------------------------//
+//------------------------------------- START: Portfolio setup ------------------------------------------------//
+$(function() {
+var $isotopeContainer = $("#portfolio-container"),
+    $isotopeFilters = $("#portfolio-filters"),
+    $isotopeFilter = $isotopeFilters.find('button'),
+    filterValue = 0;
+
+    if ($isotopeContainer.length) {
+        (function($) {
+            "use strict";
+            //
+            // when filter are clicked
+            $isotopeFilters.on("click", "button", function() {
+                var $this = $(this);
+                // setting the selected button
+                $isotopeFilter.removeClass("selected");
+                $this.addClass("selected");
+                // setting the filter
+                filterValue = $this.attr("data-filter");
+            });
+        })(jQuery);
+    }
+});
+
+//------------------------------------- END: Portfolio setup ------------------------------------------------//
+
+
+
+
+
+//------------------------------------- START: Nivo setup ------------------------------------------------//
 
 $('a').nivoLightbox({
   effect: 'slideUp',
