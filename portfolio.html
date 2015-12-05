@@ -130,14 +130,20 @@
           <!-- START: Row -->
           <div class="row">
             <!-- START: Portfolio Filter -->
-            <div class="portfolio-filter wow animated fadeIn" data-wow-offset="100" data-wow-delay=".3s">
+            <div id="portfolio-filters" class="portfolio-filter wow animated fadeIn" data-wow-offset="100" data-wow-delay=".3s">
               <!-- START: Controls -->
               <div class="controls ripple">
-                <button class="filter" data-filter="all">All Work</button>
+                <button class="filter" data-text="All Work" data-filter="all">
+                  <span class="btn-icon icon-tools"></span>
+                </button>
                 <span class="seperator">&#124;</span>
-                <button class="filter" data-filter=".web-design">Web Design</button>
+                <button class="filter" data-text="Web Design" data-filter=".web-design">
+                  <span class="btn-icon icon-browser"></span>
+                </button>
                 <span class="seperator">&#124;</span>
-                <button class="filter" data-filter=".graphic-design">Graphic Design</button>
+                <button class="filter" data-text="Graphic Design" data-filter=".graphic-design">
+                  <span class="btn-icon icon-camera"></span>
+                </button>
               </div>
               <!-- END: Controls -->
             </div>
