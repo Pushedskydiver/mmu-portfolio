@@ -20,8 +20,7 @@
     "tag": "5.2.0",
     "commit": "13805775377bd62d9064713e93101f1b42ab8316"
   },
-  "_source": "git://github.com/fontello/fontello.git",
+  "_source": "https://github.com/fontello/fontello.git",
   "_target": "~5.2.0",
-  "_originalSource": "fontello",
-  "_direct": true
+  "_originalSource": "fontello"
 }

@@ -30,7 +30,7 @@
     "tag": "0.1.4",
     "commit": "1976e6347eb063d7f75e20f96b8986b68ca95128"
   },
-  "_source": "git://github.com/nodeca/bag.js.git",
+  "_source": "https://github.com/nodeca/bag.js.git",
   "_target": "~0.1.2",
   "_originalSource": "bag.js"
 }

@@ -17,7 +17,7 @@
     "tag": "v0.10.5",
     "commit": "35f486cfe2d63c05989ee38a0a10122795661458"
   },
-  "_source": "git://github.com/twitter/typeahead.js.git",
+  "_source": "https://github.com/twitter/typeahead.js.git",
   "_target": "~0.10.2",
   "_originalSource": "typeahead.js"
 }
