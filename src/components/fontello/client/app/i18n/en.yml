@@ -1,4 +1,0 @@
-en-US:
-  loading: Loading...
-  confirm_app_reset: Are you sure?
-  invalid_code: 'Glyph code U+#{hex} is invalid.'
